@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects Condition="'$(MSBuildVersion)' == '' Or '$(MSBuildVersion)' &lt; '16.0'">$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>070b8d0d-9e6a-49ea-883e-5d9cb8d470f4</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>AigioL.Common.AspNetCore.AppCenter.Identity</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Extensions\IdentityResultExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Extensions\ServiceCollectionServiceExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\IdentityMinimalApisJsonSerializerContext.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Membership\MembershipInfo.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Request\AccountLoginRequest.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Request\BindPhoneNumberRequest.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Request\ChangePhoneNumberNewRequest.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Request\ChangePhoneNumberValidationRequest.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Request\EditUserProfileRequest.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Request\LoginChannel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Request\LoginOrRegisterRequest.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Request\RegisterByEmailRequest.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Request\ResetPasswordRequest.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Request\SendEmailCodeRequest.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Request\SendSmsRequest.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Request\SetPasswordRequest.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Request\ValidateRegisterEmailRequest.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Repositories\Abstractions\IAuthMessageRecordRepository.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Repositories\Abstractions\IClockInRecordRepository.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Repositories\Abstractions\IUserDeleteRepository.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Repositories\Abstractions\IUserMembershipRepository.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Repositories\AuthMessageRecordRepository.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Repositories\UserDeleteRepository.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Repositories\UserMembershipRepository.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\Abstractions\IIdentityJsonWebTokenValueProvider.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\Abstractions\IIdentityUserManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\Abstractions\IUserManager2.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\IdentityJsonWebTokenValueProvider.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\UserManager2.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)Models\Response\" />
+  </ItemGroup>
+</Project>

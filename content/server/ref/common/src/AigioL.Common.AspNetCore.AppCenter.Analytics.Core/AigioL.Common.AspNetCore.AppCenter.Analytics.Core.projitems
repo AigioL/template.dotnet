@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects Condition="'$(MSBuildVersion)' == '' Or '$(MSBuildVersion)' &lt; '16.0'">$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>dff7c2b6-ce45-4ba7-b4d5-0d07fd760843</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>AigioL.Common.AspNetCore.AppCenter.Analytics</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Data\Abstractions\IActiveUsersDbContext.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\Abstractions\IActiveUsersSummariesDbContext.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\Abstractions\IAnalysisLogDbContext.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\Abstractions\IAnalysisLogSummariesDbContext.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\Abstractions\IBigDataAnalysisDbContext.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\Abstractions\IKomaasharuSummariesDbContext.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\ActiveUsers\ActiveUserAnonymousStatistic.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\ActiveUsers\Summaries\ActiveUserAppVerSummary.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\ActiveUsers\Summaries\ActiveUserArchitectureSummary.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\ActiveUsers\Summaries\ActiveUserDayWeekMonthSummary.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\ActiveUsers\Summaries\ActiveUserOSSummary.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\ActiveUsers\Summaries\ActiveUserPlatformSummary.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\ActiveUsers\Summaries\ActiveUserScreenResolutionSummary.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\ActiveUsers\Summaries\ActiveUserStatisticSummary.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\AnalysisLogs\AnalysisApp.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\AnalysisLogs\AnalysisDevice.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\AnalysisLogs\AnalysisEventLog.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\AnalysisLogs\AnalysisInstall.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\AnalysisLogs\Abstractions\AnalysisLog.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\AnalysisLogs\AnalysisLogPropertiesRelation.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\AnalysisLogs\AnalysisPropertie.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\AnalysisLogs\AnalysisService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\AnalysisLogs\AnalysisServiceLogRelation.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\AnalysisLogs\AnalysisStartServiceLog.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\AnalysisLogs\AnalysisStartSessionLog.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\AnalysisLogs\Summaries\ActiveUserDeviceSummary.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\AnalysisLogs\Summaries\ActiveUserLanguageSummary.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\AnalysisLogs\Summaries\AnalysisEventLogSummary.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\AnalysisLogs\Summaries\AnalysisStartServiceLogSummary.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\AnalysisLogs\Summaries\AnalysisStartSessionLogSummary.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\AnalysisLogs\Summaries\EventRelatedPropertieSummary.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Extensions\ServiceCollectionServiceExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\ActiveUsers\ActiveUserAnonymousStatisticCacheModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\ActiveUsers\ActiveUserAnonymousStatisticType.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\ActiveUsers\ActiveUserRecordModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\ActiveUsers\ActiveUserStatisticsType.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\ActiveUsers\Summaries\ActiveUserSumResponse.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\ActiveUsers\Summaries\StatisticsActiveUserOSResponse.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\ActiveUsers\Summaries\UserActivityStatisticsResponse.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\AnalyticsMinimalApisJsonSerializerContext.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\AppCenter\AnalysisDeviceModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\AppCenter\AnalysisEventLogModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\AppCenter\AnalysisLogContainerModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\AppCenter\AnalysisLogModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\AppCenter\AnalysisLogWithPropertiesModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\AppCenter\AnalysisPageLogModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\AppCenter\AnalysisStartServiceLogModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\AppCenter\AnalysisStartSessionLogModel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)Entities\AnalysisLogs\Abstractions\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Models\ActiveUsers\Summaries\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)README.md" />
+  </ItemGroup>
+</Project>

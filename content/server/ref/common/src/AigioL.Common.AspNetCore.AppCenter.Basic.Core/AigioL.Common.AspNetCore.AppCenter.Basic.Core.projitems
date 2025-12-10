@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects Condition="'$(MSBuildVersion)' == '' Or '$(MSBuildVersion)' &lt; '16.0'">$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>9a99af09-34a7-46b8-8345-095b02f846e1</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>AigioL.Common.AspNetCore.AppCenter.Basic</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Constants\BasicConstants.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\Abstractions\IAppVerDbContext.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\Abstractions\IArticleDbContext.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\Abstractions\IOfficialMessageDbContext.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\ApiGateway\ServerCertificate.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\FileSystem\Abstractions\ICloudFileInfo.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\AppVersions\AppVer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\AppVersions\AppVerBuild.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\AppVersions\AppVerFile.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\AppVersions\AppVerRedisModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\Articles\Article.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\Articles\ArticleCategory.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\Articles\ArticleTag.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\Articles\ArticleTagRelation.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\Articles\ArticleVisitStatistic.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\FileSystem\StaticResource.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\FileSystem\StaticResourceUploadRecord.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\OfficialMessages\OfficialMessage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\OfficialMessages\OfficialCustomMessageType.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\OfficialMessages\OfficialMessageAppVerRelation.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Extensions\ServiceCollectionServiceExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\ApiGateway\ServerCertificatePackable.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\ApiGateway\ServerCertificateRawDataType.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\ApiGateway\ServerCertificateValidateKey.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\AppVersions\AppVersionDownloadModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\AppVersions\AppVersionModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\AppVersions\AppVersionTauriModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\AppVersions\DeploymentMode.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\AppVersions\DownloadMethod.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\AppVersions\UpdateChannelType.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Articles\ArticleCategoryModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Articles\ArticleCategoryTreeModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Articles\ArticleItemModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Articles\ArticleModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Articles\ArticleOrderBy.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Articles\ArticleTagModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\BasicMinimalApisJsonSerializerContext.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\FileSystem\CloudFileType.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\OfficialMessages\OfficialMessageItemModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\OfficialMessages\OfficialMessageType.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Repositories\Abstractions\IAppVerBuildRepository.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Repositories\Abstractions\IAppVerRepository.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Repositories\Abstractions\IArticleCategoryRepository.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Repositories\Abstractions\IArticleRepository.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Repositories\Abstractions\IOfficialMessageRepository.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Repositories\Abstractions\IStaticResourceRepository.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Repositories\AppVerBuildRepository.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Repositories\AppVerRepository.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Repositories\ArticleCategoryRepository.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Repositories\ArticleRepository.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Repositories\OfficialMessageRepository.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Repositories\StaticResourceRepository.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\AppVerCoreService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)Entities\FileSystem\Abstractions\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Models\Komaasharus\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)README.md" />
+  </ItemGroup>
+</Project>

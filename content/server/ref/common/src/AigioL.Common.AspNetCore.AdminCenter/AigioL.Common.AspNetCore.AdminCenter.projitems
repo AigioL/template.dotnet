@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects Condition="'$(MSBuildVersion)' == '' Or '$(MSBuildVersion)' &lt; '16.0'">$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>66c06857-99f9-4aa4-9504-e2f1070aa7ae</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>AigioL.Common.AspNetCore.AdminCenter</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)BMMinimalApis.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Constants\TenantConstants.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Controllers\Infrastructure\BMLoginController.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Controllers\Infrastructure\BMMenusController.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Controllers\Infrastructure\BMRolesController.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Controllers\Infrastructure\BMUserController.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Controllers\Infrastructure\BMUsersController.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Controllers\Infrastructure\InfoController.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\Abstractions\BMDbContextBase.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\Abstractions\IBMDbContextBase.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Extensions\ApiRspExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Extensions\AuthorizationEndpointConventionBuilderExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Extensions\EndpointRouteBuilderExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Extensions\ExceptionHandlerExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Extensions\OpenApiOptionsExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Extensions\RSAExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Extensions\EndpointRouteBuilderExtensions.MapGetRSADemoHtml.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Extensions\ServiceCollectionExtensions.AddProblemDetails.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Extensions\ServiceCollectionExtensions.AddACRepositories.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\BMAppSettings.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\BMButtonModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\BMRoleModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\BMUserTableItem.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Menus\BMMenuButtonModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Menus\BMMenuEdit.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Menus\BMMenuModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Menus\BMMenuTreeItem.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\BMMinimalApisJsonSerializerContext.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\BMApiRspExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\BMApiRsp.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\BMInitSystemRequest.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Users\BMChangePasswordRequest.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Users\BMUserInfoModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Users\AddBMUserModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Users\EditBMUserInfoModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Users\EditBMUserModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Policies\Handlers\PermissionAuthorizationHandler.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Policies\Requirements\PermissionAuthorizationRequirement.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Repositories\Abstractions\IBMMenuRepository.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Repositories\Abstractions\IBMRoleRepository.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Repositories\Abstractions\IBMUserRepository.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Repositories\BMMenuRepository.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Repositories\BMRoleRepository.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Repositories\BMUserRepository.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)README.md" />
+  </ItemGroup>
+</Project>

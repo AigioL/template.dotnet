@@ -1,0 +1,4 @@
+GetModuleHandle
+WPARAM
+LPARAM
+LRESULT
